@@ -1,0 +1,15 @@
+-- exo 02
+--
+-- Nous allons normaliser la table user en supprimant la colonne role et en créant une nouvelle table qui contient la liste des rôles possibles.
+--
+-- Modifiez la tabler user :
+-- - supprimez la colonne role
+--
+-- Créez une table role qui contient les colonnes :
+-- - nom
+--
+-- Le nom d'un rôle doit être unique (pas deux rôles avec le même nom et deux id différents)
+--
+-- La relation role 0,n <-> 1,n user est de type « many to many »
+--
+-- Au besoin, vous devez rajouter les contraintes et indexes
