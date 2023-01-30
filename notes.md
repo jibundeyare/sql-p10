@@ -57,7 +57,12 @@
 ## Import
 
 - choisir la BDD et cliquer sur « Import »
-- choisir le fichier `sql`, `zip` ou `gzip`
+- dans la section « Fichier à importer » choisir le fichier `sql`, `zip` ou `gzip`
+- cliquer sur exécuter
+
+Si l'import échoue, essayer l'option suivante :
+- dans la section « Autres options » **décocher** :
+  - « Activer la vérification des clés étrangères »
 - cliquer sur exécuter
 
 ## Convention de nommage des contraintes et indexes

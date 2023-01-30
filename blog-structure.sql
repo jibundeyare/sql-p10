@@ -152,7 +152,7 @@ ALTER TABLE `post`
 -- Index pour la table `post_tag`
 --
 ALTER TABLE `post_tag`
-  ADD UNIQUE KEY `idx_post_tag_post_id_tag_id_unique` (`post_id`,`tag_id`),
+  ADD UNIQUE KEY `uqx_post_tag_post_id_tag_id` (`post_id`,`tag_id`),
   ADD KEY `fk_post_tag_tag_id` (`tag_id`);
 
 --
@@ -160,36 +160,36 @@ ALTER TABLE `post_tag`
 --
 ALTER TABLE `profil`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `idx_profil_user_id_unique` (`user_id`);
+  ADD UNIQUE KEY `uqx_profil_user_id` (`user_id`);
 
 --
 -- Index pour la table `role`
 --
 ALTER TABLE `role`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `idx_role_nom_unique` (`nom`);
+  ADD UNIQUE KEY `uqx_role_nom` (`nom`);
 
 --
 -- Index pour la table `role_user`
 --
 ALTER TABLE `role_user`
-  ADD UNIQUE KEY `idx_role_user_user_id_role_id_unique` (`user_id`,`role_id`),
+  ADD UNIQUE KEY `uqx_role_user_user_id_role_id` (`user_id`,`role_id`),
   ADD KEY `fk_role_user_role_id` (`role_id`),
-  ADD KEY `idx_role_user_user_id` (`user_id`);
+  ADD KEY `fk_role_user_user_id` (`user_id`);
 
 --
 -- Index pour la table `tag`
 --
 ALTER TABLE `tag`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `idx_tag_name_unique` (`nom`);
+  ADD UNIQUE KEY `uqx_tag_name` (`nom`);
 
 --
 -- Index pour la table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `constraint_user_email` (`email`);
+  ADD UNIQUE KEY `uqx_user_email` (`email`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
