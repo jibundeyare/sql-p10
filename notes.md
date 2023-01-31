@@ -112,7 +112,7 @@ Exemple :
 - table : `user`
 - colonne : `email`
 - type d'index : unique
-- nom de l'index : `uqx_user_email_unique`
+- nom de l'index : `uqx_user_email`
 
 Sur deux colonnes : `[type d'index]_[nom de la table]_[nom de la 1ère colonne]_[nom de la 2ème colonne]`
 
