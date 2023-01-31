@@ -153,6 +153,7 @@ ALTER TABLE `post`
 --
 ALTER TABLE `post_tag`
   ADD UNIQUE KEY `uqx_post_tag_post_id_tag_id` (`post_id`,`tag_id`),
+  ADD KEY `fk_post_tag_post_id` (`post_id`);
   ADD KEY `fk_post_tag_tag_id` (`tag_id`);
 
 --
